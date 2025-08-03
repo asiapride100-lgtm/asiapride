@@ -1,0 +1,310 @@
+.guide-wrapper {
+  background-color: #020E21;
+  color: #fff;
+  text-align: center;
+}
+
+.guide-background {
+  background: linear-gradient(180deg, #020E21 0%, #16202F 100%);
+  padding: 5vw 2vw;
+}
+
+.guide-title {
+  font-size: 4rem;
+  background: linear-gradient(45deg, #44D3FF 0%, #3D89EC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+
+.guide-title:hover {
+  text-shadow:
+    0 0 5px rgba(68, 211, 255, 1),
+    0 0 20px rgba(68, 211, 255, 0.8),
+    0 0 5px rgba(61, 137, 236, 0.6),
+    0 0 30px rgba(32, 95, 178, 0.5);
+}
+
+
+.guide-subtitle {
+  color: #bbb;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.guide-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.guide-btn {
+  background: linear-gradient(135deg, #0C2A4E, #134E8C);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.8rem 2rem;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.guide-btn:hover {
+  background: linear-gradient(135deg, #0C2A4E, #1c6dd2);
+}
+
+.guide-btn.active {
+  background: linear-gradient(135deg, #1c6dd2, #0C2A4E);
+  filter: brightness(1.2);
+  border: 2px solid #5abfff;
+}
+
+.highlight-green {
+  color: #54FFA1;
+  font-weight: 600;
+}
+
+.platform-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.guide-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.guide-content {
+  background: linear-gradient(#03183B, #03183B) padding-box,
+    linear-gradient(135deg, #3D89EC, #41B5F7) border-box;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  font-weight: 600;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.guide-content h4 {
+  color: #5abfff;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.guide-content ol {
+  line-height: 1.6;
+}
+
+.guide-content pre {
+  background: linear-gradient(#020E21, #020E21) padding-box,
+    linear-gradient(135deg, #3D89EC, #41B5F7) border-box;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  color: #00ff99;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.android-method {
+  margin-bottom: 24px;
+}
+
+.android-method h5 {
+  margin-bottom: 8px;
+  color: #00ff99;
+  font-size: 1rem;
+}
+
+
+/* icon copy*/
+.copy-btn {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  background: rgba(255, 255, 255, 0.1);
+  /* semi-transparent background */
+  backdrop-filter: blur(10px);
+  /* ✅ tambahkan satuan 'px' */
+  -webkit-backdrop-filter: blur(10px);
+  /* Safari support */
+  border: none;
+  cursor: pointer;
+  padding: .5px 6px 4px 6px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.copy-icon-image {
+  width: 20px;
+  height: 20px;
+}
+
+.code-block {
+  position: relative;
+  margin: 1rem 0 1rem 1.5rem;
+  background-color: #020E21;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.code-block pre {
+  padding: 1rem;
+  margin: 0;
+  color: #00ff99;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  overflow-x: auto;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #5abfff;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.copy-btn:hover {
+  color: #ffffff;
+}
+
+.copy-notification {
+  position: absolute;
+  top: 0.8rem;
+  right: 3rem;
+  background-color: #1c6dd2;
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .guide-background {
+    padding: 10vw 4vw;
+  }
+  
+  .guide-title {
+    font-size: 3rem;
+  }
+
+  .guide-subtitle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .guide-btn {
+    padding: 0.6rem 1.3rem;
+    font-size: 0.9rem;
+  }
+
+  .guide-content {
+    padding: 1.2rem;
+  }
+
+  .guide-content h4 {
+    font-size: 1.4rem;
+  }
+
+  .guide-content ol {
+    font-size: 0.7rem;
+  }
+}
+
+.code-block pre {
+  font-size: 0.7rem;
+}
+
+.copy-btn {
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.copy-icon-image {
+  width: 18px;
+  height: 18px;
+}
+
+.copy-notification {
+  top: 0.6rem;
+  right: 2.5rem;
+  font-size: 0.7rem;
+}
+
+.android-method h5 {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 480px) {
+  .guide-title {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .guide-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .guide-btn {
+    width: 100%;
+    padding: 0.6rem;
+  }
+
+  .guide-content {
+    padding: 1rem;
+  }
+
+  .guide-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .code-block {
+    margin: 1rem 0;
+  }
+
+  .android-method h5 {
+    font-size: 0.9rem;
+  }
+
+  .copy-notification {
+    top: 0.4rem;
+    right: 2rem;
+  }
+}

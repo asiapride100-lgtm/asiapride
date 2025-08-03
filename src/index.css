@@ -1,0 +1,49 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+html, body {
+  background-color: #020E21;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card Styling */
+.card {
+  padding: 2em;
+}
+
+/* Info Text */
+.read-the-docs {
+  color: #888;
+}
+
+/* Custom Background Colors */
+.bg-blue {
+  background-color: #020E21 !important;
+}
+
+/* Utilities */
+.text-center { text-align: center; }
+.text-white { color: white; }
+.d-flex { display: flex; }
+.flex-column { flex-direction: column; }
+.justify-content-center { justify-content: center; }
+.align-items-center { align-items: center; }

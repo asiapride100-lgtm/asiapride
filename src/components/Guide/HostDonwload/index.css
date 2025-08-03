@@ -1,0 +1,29 @@
+.hosts-download-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 28px 3px 15px;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #3D89EC 0%, #44D3FF 100%);
+  color: rgb(0, 0, 0);
+  font-size: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+.hosts-download-btn:hover {
+  background: linear-gradient(90deg, #44D3FF 0%, #3D89EC 100%);
+}
+
+.hosts-download-btn .icon {
+  flex-shrink: 0;
+}
+
+.file-icon{
+  width: 15px;
+  height: 15px;
+  background: url('/path/to/file-icon.svg') no-repeat center center;
+  background-size: contain;
+}
