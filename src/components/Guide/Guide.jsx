@@ -1,12 +1,18 @@
 import HostsDownloadButton from "./HostDonwload/FileHostDownload.jsx";
 import React, { useState } from "react";
+import CopyIcon from "/assets/icons/Copy.svg";
 import "./index.css";
 
+import windowsIcon from "/assets/icons/laptop.svg";
+import androidIcon from "/assets/icons/android.svg";
+import appleIcon from "/assets/icons/apple.svg";
+import macIcon from "/assets/icons/macOs.png";
+
 const platformIcons = {
-  Windows: "/assets/icons/laptop.svg",
-  Android: "/assets/icons/android.svg",
-  iOS: "/assets/icons/apple.svg",
-  MacOS: "/assets/icons/macOs.png",
+  Windows: windowsIcon,
+  Android: androidIcon,
+  iOS: appleIcon,
+  MacOS: macIcon,
 };
 
 const guideContents = {
@@ -181,7 +187,7 @@ const Guide = () => {
                         }}
                       >
                         <img
-                          src="/assets/icons/Copy.svg"
+                          src={CopyIcon}
                           alt="Copy"
                           className="copy-icon-image"
                         />

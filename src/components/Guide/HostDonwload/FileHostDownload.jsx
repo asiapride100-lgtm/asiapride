@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import fileIcon from "/assets/icons/File.svg";
 
 const HostsDownloadButton = () => {
   const AsiaTestText = `202.10.42.93 growtopia1.com
@@ -27,11 +28,7 @@ const HostsDownloadButton = () => {
       title="Download Hosts File"
       type="button"
     >
-      <img
-        src="/assets/icons/File.svg"
-        alt="Hosts File"
-        className="file-icon"
-      />
+      <img src={fileIcon} alt="Hosts File" className="file-icon" />
       Hosts File
     </button>
   );
